@@ -12,45 +12,39 @@
       text-align: center;
       padding: 2rem;
     }
-    h1 {
-      color: #f95;
-    }
+    h1 { color: #f95; }
     .button {
-  display: inline-block;
-  margin: 1rem;
-  padding: 1rem 2rem;
-  background-color: #f95;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  font-size: 1.1rem;
-}
-
-.button.disabled {
-  background-color: #777;
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-    .discord {
-      margin-top: 2rem;
-      font-size: 0.9rem;
+      display: inline-block;
+      margin: 1rem;
+      padding: 1rem 2rem;
+      background-color: #f95;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 1.1rem;
     }
+    .button.disabled {
+      background-color: #777;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+    .discord { margin-top: 2rem; font-size: 0.9rem; }
+    .note { margin-top: .5rem; font-size: .9rem; color: #bbb; }
   </style>
 </head>
 <body>
-  <h1>🎉 CloudAnime is Launching at MomoCon! 🎉</h1>
+  <h1>🎉 CloudAnime is Live! 🎉</h1>
   <p>Connect with anime fans, discover events, and enjoy free premium access this weekend only!</p>
 
   <div>
-    <a href="https://apps.apple.com/us/app/cloudanime/id6483004308" class="button">iOS – Available Now</a>
-<a href="#" class="button disabled">Android – Coming Soon</a>
-
+    <a href="https://apps.apple.com/us/app/cloudanime/id6483004308" class="button" target="_blank" rel="noopener">iOS – Available Now</a>
+    <a href="https://play.google.com/apps/testing/com.cloudanime" class="button" target="_blank" rel="noopener">Android – Join Closed Beta</a>
+    <div class="note">Requires a Google Account on your device. If Play says “App not available,” make sure you’re signed in with the same Google account you used to join.</div>
   </div>
 
   <div class="discord">
     Want launch updates? <br>
-    <a href="https://discord.gg/nqxTXXpCUF" target="_blank" style="color: #f95;">Join our Discord</a>
+    <a href="https://discord.gg/nqxTXXpCUF" target="_blank" rel="noopener" style="color: #f95;">Join our Discord</a>
   </div>
 </body>
 </html>
