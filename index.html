@@ -1,9 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CloudAnime Launch</title>
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Discover anime events, connect with fans, and explore your anime community with CloudAnime. Available now on iOS and Android.">
+
+  <title>CloudAnime | Download Now</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,40 +16,128 @@
       color: #fff;
       text-align: center;
       padding: 2rem;
+      margin: 0;
+      min-height: 100vh;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
-    h1 { color: #f95; }
+
+    h1 {
+      color: #f95;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #ddd;
+      max-width: 550px;
+      line-height: 1.6;
+    }
+
+    .downloads {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
     .button {
       display: inline-block;
-      margin: 1rem;
       padding: 1rem 2rem;
       background-color: #f95;
-      color: #fff;
+      color: #111;
       text-decoration: none;
       border-radius: 6px;
       font-size: 1.1rem;
+      font-weight: bold;
+      transition: background-color 0.2s, transform 0.2s;
     }
-    .button.disabled {
-      background-color: #777;
-      cursor: not-allowed;
-      pointer-events: none;
+
+    .button:hover {
+      background-color: #ffb477;
+      transform: translateY(-2px);
     }
-    .discord { margin-top: 2rem; font-size: 0.9rem; }
-    .note { margin-top: .5rem; font-size: .9rem; color: #bbb; }
+
+    .discord {
+      margin-top: 2.5rem;
+      font-size: 0.95rem;
+      color: #bbb;
+      line-height: 1.8;
+    }
+
+    .discord a {
+      color: #f95;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .discord a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .downloads {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .button {
+        display: block;
+      }
+    }
   </style>
 </head>
+
 <body>
   <h1>🎉 CloudAnime is Live! 🎉</h1>
-  <p>Connect with anime fans, discover events, and enjoy free premium access!</p>
 
-  <div>
-    <a href="https://apps.apple.com/us/app/cloudanime/id6483004308" class="button" target="_blank" rel="noopener">iOS – Available Now</a>
-    <a href="https://forms.gle/mEXZ4CbgFHZf4H1i9" class="button" target="_blank" rel="noopener">Android – Join Closed Beta</a>
-    <div class="note">Google requires invite-only testing. Submit the Gmail that’s signed into your Android phone. After you’re added, you’ll receive the install link by email.</div>
+  <p>
+    Discover anime conventions, parties, and events near you.
+    Connect with fellow anime fans and never miss out on
+    what's happening in your community!
+  </p>
+
+  <div class="downloads">
+    <a
+      href="https://apps.apple.com/us/app/cloudanime/id6483004308"
+      class="button"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      🍎 Download for iOS
+    </a>
+
+    <a
+      href="https://play.google.com/store/apps/details?id=com.cloudanime"
+      class="button"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      ▶ Download for Android
+    </a>
   </div>
 
   <div class="discord">
-    Want launch updates? <br>
-    <a href="https://discord.gg/nqxTXXpCUF" target="_blank" rel="noopener" style="color: #f95;">Join our Discord</a>
+    Want to connect with the community?
+    <div>
+      <a
+        href="https://discord.gg/nqxTXXpCUF"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Join our Discord
+      </a>
+    </div>
   </div>
 </body>
 </html>
